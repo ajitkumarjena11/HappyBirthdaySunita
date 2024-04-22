@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Envelope Open Animation with Hearts</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <audio controls autoplay loop id="audio">
+      <source src="happyBirthday.mp3" type="audio/mp3" />
+    </audio>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- partial:index.partial.html -->
+    <div class="envlope-wrapper">
+      <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+          <div class="words line1"></div>
+          <div class="words line2">🎂HAPPY BIRTH DAY🎂</div>
+          <div class="words line3">💖SUNITA💖</div>
+          <div class="words line4"></div>
+          <div class="words line5"></div>
+        </div>
+        <div class="hearts">
+          <div class="heart a1"></div>
+          <div class="heart a2"></div>
+          <div class="heart a3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="reset">
+      <button id="open" onclick="playPause()">Open</button>
+      <button id="reset" onclick="stop()">Reset</button>
+    </div>
+
+    <!-- 
+
+Inspired by:
+
+    * https://medium.com/web-for-you/how-to-make-a-interactive-envelope-9df970614eea
+    * https://codepen.io/lisafolkerson/pen/BjRoJO    
+
+-->
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
